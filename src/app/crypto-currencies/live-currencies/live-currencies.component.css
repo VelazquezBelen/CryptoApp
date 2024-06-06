@@ -1,0 +1,44 @@
+.cryptocurrencies-link {
+    color: rgb(18 86 160);
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.cryptocurrencies-link:hover {
+    text-decoration: underline;
+}
+
+.currency-list {
+    width: 60%;
+    list-style: none;
+    padding: 0px;
+    margin-bottom: 15px;
+}
+
+.currency-list > li {
+    height: 30px;
+    border-bottom: 1px solid gainsboro;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.currency-label {
+    font-weight: 600;
+}
+
+.market-overview {
+    text-align: center;
+}
+
+.market-overview > a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+.market-overview > a:hover {
+    text-decoration: underline;
+    color: rgb(18 86 160);
+}

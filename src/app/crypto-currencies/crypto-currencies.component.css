@@ -1,0 +1,49 @@
+.cryptocurrencies-table {
+    width: 60%;
+    margin-bottom: 15px;
+}
+
+.cryptocurrencies-table th {
+    border-bottom: 1px solid gray;
+    padding-bottom: 10px;
+    text-align: left;
+    font-size: 15px;
+}
+
+.cryptocurrencies-tablebody {
+    height: 30px;
+    border-bottom: 1px solid gainsboro;
+    font-size: 14px;
+}
+
+.cryptocurrencies-tablebody:hover {
+    background-color: rgb(237, 236, 236);    
+}
+
+.currency-name  {
+    font-weight: 600;
+    text-decoration: none;
+    color: rgb(18 86 160);
+    display: block;
+    width: 100%;
+}
+
+.currency-name:hover  {
+    opacity: 70%;
+    text-decoration: underline;
+}
+
+.market-overview {
+    text-align: center;
+}
+
+.market-overview > a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+.market-overview > a:hover {
+    text-decoration: underline;
+    color: rgb(18 86 160);
+}

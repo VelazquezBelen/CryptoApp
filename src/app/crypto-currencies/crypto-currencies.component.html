@@ -1,0 +1,26 @@
+<section>
+    <h2>Cryptocurrencies</h2>
+    <table class="cryptocurrencies-table">
+        <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>Symbol</th>
+        </tr>
+        <tr *ngFor="let currency of cryptoCurencies" class="cryptocurrencies-tablebody">
+            <td>{{currency.rank}}</td>
+            <td>
+                <a [routerLink]="['/live', currency.symbol]" class="currency-name">
+                    {{currency.name}}
+                </a>
+            </td>
+            <td>{{currency.symbol}}</td>
+        </tr>
+    </table>
+</section>
+
+<section class="market-overview">
+    <hr />
+    <a [routerLink]="['/overview']">
+        See the Market Overview
+    </a>
+</section>

@@ -1,0 +1,9 @@
+.cryptocurrencies-link {
+    color: rgb(18 86 160);
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.cryptocurrencies-link:hover {
+    text-decoration: underline;
+}

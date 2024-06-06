@@ -1,0 +1,80 @@
+<section>
+    <a [routerLink]="['/']"
+        class="cryptocurrencies-link"
+    >
+        Back to Cryptocurrencies
+    </a>
+    <h2>{{this.cryptoSymbol}}</h2>
+    <ul *ngIf="currencyDetails" class="currency-list">
+        <li>
+            <span class="currency-label">Time</span>
+            <span>{{currencyDetails.time}}</span>
+        </li>
+        <li>
+            <span class="currency-label">Buy</span> 
+            <span>{{currencyDetails.buy}}</span>
+        </li>
+        <li>
+            <span class="currency-label">Sell</span> 
+            <span>{{currencyDetails.sell}}</span>
+        </li>
+        <li>
+            <span class="currency-label">Change Rate</span> 
+            <span>{{currencyDetails.changeRate}}</span>
+        </li>
+        <li>
+            <span class="currency-label">Change Price</span>
+            <span>{{currencyDetails.changePrice}}</span>
+        </li>
+        <li>
+            <span class="currency-label">High</span>
+            <span>{{currencyDetails.high}}</span>
+        </li>
+        <li>
+            <span class="currency-label">Low</span> 
+            <span>{{currencyDetails.low}}</span>
+        </li>
+        <li>
+            <span class="currency-label">Vol</span> 
+            <span>{{currencyDetails.vol}}</span>
+        </li>
+        <li>
+            <span class="currency-label">Vol Value</span> 
+            <span>{{currencyDetails.volValue}}</span>
+        </li>
+        <li>
+            <span class="currency-label">Last</span> 
+            <span>{{currencyDetails.last}}</span>
+        </li>
+        <li>
+            <span class="currency-label">Average Price</span> 
+            <span>{{currencyDetails.averagePrice}}</span>
+        </li>
+        <li>
+            <span class="currency-label">Taker Fee Rate</span> 
+            <span>{{currencyDetails.takerFeeRate}}</span>
+        </li>
+        <li>
+            <span class="currency-label">Maker Fee Rate</span> 
+            <span>{{currencyDetails.makerFeeRate}}</span>
+        </li>
+        <li>
+            <span class="currency-label">Taker Coefficient</span> 
+            <span>{{currencyDetails.takerCoefficient}}</span>
+        </li>
+        <li>
+            <span class="currency-label">Maker Coefficient</span> 
+            <span>{{currencyDetails.makerCoefficient}}</span>
+        </li>
+    </ul>
+    <section *ngIf="!currencyDetails">
+        <h4>No results found for {{this.cryptoSymbol}}</h4>
+    </section>
+</section>
+
+<section class="market-overview">
+    <hr />
+    <a [routerLink]="['/overview']">
+        See the Market Overview
+    </a>
+</section>
